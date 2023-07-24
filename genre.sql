@@ -1,0 +1,6 @@
+CREATE TABLE Genre (
+    GenreID NUMBER PRIMARY KEY,
+    Name VARCHAR2(100) NOT NULL,
+);
+
+DESC Genre;
