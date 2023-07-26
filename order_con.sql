@@ -1,0 +1,12 @@
+ALTER TABLE "Order"
+ADD CustomerID NUMBER
+ADD CONSTRAINT fk_order_customer
+FOREIGN KEY (CustomerID)
+REFERENCES Customer (CustomerID);
+
+--RUN THIS CODE SEPERATERY
+ALTER TABLE "Order"
+ADD BookID NUMBER
+ADD CONSTRAINT fk_book_order
+FOREIGN KEY (BookID)
+REFERENCES Book (BookID);

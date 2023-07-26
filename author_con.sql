@@ -1,0 +1,5 @@
+ALTER TABLE Author
+ADD BookID NUMBER
+ADD CONSTRAINT fk_bookid
+FOREIGN KEY (BookID)
+REFERENCES Customer (BookID);
